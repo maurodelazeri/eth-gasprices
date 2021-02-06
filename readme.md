@@ -29,13 +29,13 @@ ethereum rpc url can be set with `ETH_RPC_URL` environment variable (default `ht
 
 ```json
 {
-  "block_number": 4813900,
-  "block_time": 14.9,
-  "health": true,
-  "slow": 1,
-  "standard": 4,
-  "fast": 20,
-  "instant": 40
+   "health":true,
+   "block_number":11799460,
+   "slow":137.0,
+   "standard":214.459,
+   "fast":283.064,
+   "instant":311.0,
+   "block_time":14.176
 }
 ```
 
