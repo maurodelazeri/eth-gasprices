@@ -4,7 +4,7 @@ estimates ethereum gas price based on recent blocks and provides a simple api
 
 ## installation
 
-requires python 3.6 and an ethereum full node.
+requires python 3.6 or higher and an ethereum full node. If you dont have a full node you can use [Quiknode](https://www.quiknode.io/) or [Infura](https://infura.io/).
 
 ```bash
 pip3 install -r requirements.txt
