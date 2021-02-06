@@ -39,6 +39,19 @@ ethereum rpc url can be set with `ETH_RPC_URL` environment variable (default `ht
 }
 ```
 
+
+## Install
+
+```
+cd /opt
+git clone https://github.com/maurodelazeri/eth-gasprices.git
+cd eth-gasprices
+cp gasprice.service /etc/systemd/system/gasprice.service
+systemctl daemon-reload
+systemctl start gasprice.service
+systemctl status gasprice.service
+```
+
 `slow`, `standard`, `fast` and `instant` values represent minimal gas price of the latest 200 blocks. by default slow represents 30% probability, standard is 60%, fast is 90% and instant is 100%.
 
 This project was forked from https://github.com/banteg/gasprice

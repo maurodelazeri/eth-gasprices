@@ -8,7 +8,7 @@ After=network.target
 Environment=LC_ALL=C.UTF-8
 Environment=LANG=C.UTF-8
 
-ExecStart=/usr/local/bin/gasprice
+ExecStart=/opt/eth-gasprices/gasprice
 Restart=on-failure
 
 ; Run under unprivileged mode instead of root
