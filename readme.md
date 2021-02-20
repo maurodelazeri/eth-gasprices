@@ -10,7 +10,7 @@ requires python 3.6 or higher and an ethereum full node. If you dont have a full
 pip3 install -r requirements.txt
 ```
 
-Make sure you export `ETH_RPC_URL` 
+Make sure you export `ETH_RPC_URL` ex: `export ETH_RPC_URL=http://localhost:8545`
 
 there is an example of systemd service if you want to run it as a service.
 
@@ -24,8 +24,6 @@ Options:
   -p, --port 8000
   -s, --skip-warmup
 ```
-
-ethereum rpc url can be set with `ETH_RPC_URL` environment variable (default `http://localhost:8545`).
 
 ## api
 
