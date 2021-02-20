@@ -11,7 +11,11 @@ from web3 import Web3, HTTPProvider
 from sanic import Sanic, response
 from retry import retry
 
-ETH_RPC_URL = os.environ.get('ETH_RPC_URL', 'http://127.0.0.1:8545')
+ETH_RPC_URL = os.environ.get('ETH_RPC_URL')
+if "ETH_RPC_URL" not in os.environ:
+  print("Please specify your ETH_RPC_URL url")
+  exit()
+
 QUANTILES = dict(slow=35, standard=60, fast=90, instant=100)
 WINDOW = 200
 
