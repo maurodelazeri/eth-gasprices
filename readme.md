@@ -10,6 +10,8 @@ requires python 3.6 or higher and an ethereum full node. If you dont have a full
 pip3 install -r requirements.txt
 ```
 
+Make sure you export `ETH_RPC_URL` 
+
 there is an example of systemd service if you want to run it as a service.
 
 ## usage
